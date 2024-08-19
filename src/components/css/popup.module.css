@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.backButton{
+    width: 50px;
+    height: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+.content > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.content form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.content form > div, .content form > input[type='submit']{
+    margin: 10px 0px;
+}
+.content form div > label{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.content form div > input[type='text'], .content form div > textarea{
+    border: none;
+    border-bottom: 1px solid #0078D4;
+}
+.content form > input[type='submit']{
+    background: #0078D4;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.content form > input[type='submit']:hover{
+    border: 1px solid #0078D4;
+    color: black;
+    background: white;
+}
+
+.content form div > input{
+    width: 100%;
+}
+.content form div > p{
+    font-weight: bold;
+    color: green;
+}
+
+.backButton:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 365px) {
+    .container{
+        width: 100%;
+    }
+    .content{
+        width: 80%;
+    }
+}

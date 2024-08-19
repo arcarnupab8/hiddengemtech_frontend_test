@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}

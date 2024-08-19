@@ -1,0 +1,56 @@
+.container{
+    margin: 10px 10px;
+    padding: 20px 40px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background: #3D6CB4;
+    position: relative;
+}
+
+.container > h1, .container > p{
+    color: white;
+}
+.container > h1:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container > .Editmode img{
+    position: absolute;
+    right: 10%;
+    top: 80%;
+}
+.container > .Editmode img:hover{
+    cursor: pointer;
+}
+
+.menuList{
+    background: white;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    position: absolute;
+    right: 10%;
+    top: 90%;
+    z-index: 1;
+}
+.menuList > div{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+}
+.menuList > div img {
+    width: 20px; 
+    height: 20px;
+}
+
+.menuList > div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 460px) {
+    .container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 60px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+}
+.content form > div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.content form > input[type=submit]{
+    margin: 10px 0px;
+    background: #0078D4;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.content form > input[type='submit']:hover{
+    border: 1px solid #0078D4;
+    color: black;
+    background: white;
+}
+.content div > p{
+    color: red;
+    font-weight: 600;
+}
+
+.registerButton{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.backButton > img:hover{
+    cursor: pointer;
+}

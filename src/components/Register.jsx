@@ -25,7 +25,7 @@ function Register() {
 
     try{
 
-      const response = await axios.post('/api/register', {
+      const response = await axios.post('https://hiddengrmtech-backend-test.vercel.app/register', {
         username: data.username,
         password: data.password,
         name: data.name,

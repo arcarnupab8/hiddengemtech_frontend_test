@@ -12,7 +12,7 @@ function Notes({ setSelectedNoteId, setShowEditNote, setShowDetailsNote }) {
   useEffect(() => {
     const fetchNotes = async () => {
         try {
-            const response = await axios.get('/api/getAllNotes');
+            const response = await axios.get('https://hiddengrmtech-backend-test.vercel.app/getAllNotes');
             setNotes(response.data);
         } catch (err) {
             setError(err.message);

@@ -48,7 +48,7 @@ function History() {
     if (data.name) { // Ensure data.name is available
       const fetchLogs = async () => {
         try {
-          const response = await axios.post('/api/getAllHistories', {
+          const response = await axios.post('https://hiddengrmtech-backend-test.vercel.app/getAllHistories', {
             name: data.name
           });
           setLogs(response.data);

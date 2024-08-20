@@ -47,7 +47,7 @@ function Addnote({ onClose }) {
 
     try{
 
-      const response = await axios.post('/api/addNote', {
+      const response = await axios.post('https://hiddengrmtech-backend-test.vercel.app/addNote', {
         id: data.id,
         content: data.content,
         dateofmade: data.dateofmade,

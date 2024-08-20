@@ -38,7 +38,7 @@ function Editnote({ id, onClose }) {
 
         const fetchNote = async () => {
             try{
-              const response = await axios.post('/api/getNoteInfo', {
+              const response = await axios.post('https://hiddengrmtech-backend-test.vercel.app/getNoteInfo', {
                 id
               });
         
@@ -65,7 +65,7 @@ function Editnote({ id, onClose }) {
         // console.log(data);
         try{
     
-          const response = await axios.post('/api/updateNote', {
+          const response = await axios.post('https://hiddengrmtech-backend-test.vercel.app/updateNote', {
             id: data.id,
             oldcontent: data.content,
             newcontent: data.newcontent,

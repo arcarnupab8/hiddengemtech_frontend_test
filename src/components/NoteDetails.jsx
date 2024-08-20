@@ -12,7 +12,7 @@ function NoteDetails({ id, onClose }) {
   useEffect(() => {
     const fetchNote = async () => {
       try {
-        const response = await axios.post('/api/getNoteInfo', { id });
+        const response = await axios.post('https://hiddengrmtech-backend-test.vercel.app/getNoteInfo', { id });
         setData({
           content: response.data.content,
           Dateofmade: response.data.Dateofmade,

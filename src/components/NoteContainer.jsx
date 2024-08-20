@@ -45,7 +45,7 @@ function NoteContainer({ NoteDoc, content, dateofmade, madeby, onEditClick, onVi
 
     const handleDelete = async () => {
       try {
-        const response = await axios.delete(`/api/deleteNote/${NoteDoc}`);
+        const response = await axios.delete(`https://hiddengrmtech-backend-test.vercel.app/deleteNote/${NoteDoc}`);
         console.log(response.data.message);
       } catch (err) {
         console.log(err);
